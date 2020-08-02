@@ -1,0 +1,96 @@
+body {
+    background-color: #222;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .over-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .container {
+    align-self: center;
+  }
+
+  .menu {
+    min-width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .tiles {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button {
+    text-decoration: none;
+    background-color: rgb(86, 94, 101);
+    color: rgb(218, 220, 222);
+    padding: 7px 30px;
+  }
+  
+  .tile1 {
+    background: rgb(149, 199, 174);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  
+  .tile2 {
+    background-color:  rgb(149, 174, 199);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  
+  .tile3 {
+    background-color: rgb(149, 199, 174);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  
+  .tile4 {
+    background-color: rgb(149, 174, 199);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  
+  .tile5 {
+    background-color: rgb(149, 199, 174);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  
+  .tile6 {
+    background-color:  rgb(149, 174, 199);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  .tile7 {
+    background-color:  rgb(149, 199, 174);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  .tile8 {
+    background-color:  rgb(149, 174, 199);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  .tile9 {
+    background-color:  rgb(199, 174, 149);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
+  
+  a:hover {
+    background-color: #343c43;
+  }
