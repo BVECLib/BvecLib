@@ -1,12 +1,8 @@
 body {
     background-color: #222;
-    padding: 0;
-    margin: 0;
     /* font-family: 'Amatic SC', cursive; */
     font-family: 'Rajdhani', sans-serif;
     letter-spacing: .1em;
-    font-size: 1.5em;
-    text-align: center;
   }
 
 
@@ -62,12 +58,6 @@ MAIN CONTENT
   
   .tile2 {
     background-color:  rgb(149, 174, 199);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-
-  .tile3 {
-    background-color:  rgb(200, 138, 169);
     color: rgb(86, 94, 101);
     padding: 7px 30px;
   }
