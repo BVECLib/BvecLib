@@ -55,52 +55,13 @@ MAIN CONTENT
   }
   
   .tile1 {
-    background: rgb(149, 199, 174);
+    background-color : rgb(149, 199, 174);
     color: rgb(86, 94, 101);
     padding: 7px 30px;
   }
   
   .tile2 {
     background-color:  rgb(149, 174, 199);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-  
-  .tile3 {
-    background-color: rgb(149, 199, 174);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-  
-  .tile4 {
-    background-color: rgb(149, 174, 199);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-  
-  .tile5 {
-    background-color: rgb(149, 199, 174);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-  
-  .tile6 {
-    background-color:  rgb(149, 174, 199);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-  .tile7 {
-    background-color:  rgb(149, 199, 174);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-  .tile8 {
-    background-color:  rgb(149, 174, 199);
-    color: rgb(86, 94, 101);
-    padding: 7px 30px;
-  }
-  .tile9 {
-    background-color:  rgb(199, 174, 149);
     color: rgb(86, 94, 101);
     padding: 7px 30px;
   }
