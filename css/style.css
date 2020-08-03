@@ -65,6 +65,12 @@ MAIN CONTENT
     color: rgb(86, 94, 101);
     padding: 7px 30px;
   }
+
+  .tile3 {
+    background-color:  rgb(200, 138, 169);
+    color: rgb(86, 94, 101);
+    padding: 7px 30px;
+  }
   
   a:hover {
     background-color: #343c43;
