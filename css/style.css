@@ -19,23 +19,6 @@ HEADER
 MAIN CONTENT
 */
 
-  .over-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  
-  .container {
-    align-self: center;
-  }
-
-  .menu {
-    min-width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
   
   .tiles {
     padding: 0.5em;
