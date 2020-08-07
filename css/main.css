@@ -19,9 +19,16 @@ body {
     font-family: 'Quicksand', serif;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: .1em;
     padding: 1rem;
 }
+/*
+HEADER
+*/
+
+#header img {
+    width: 50px;
+  }
 
 .main {
     max-width: 1200px;
