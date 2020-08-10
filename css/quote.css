@@ -1,14 +1,12 @@
-body {
-    background: linear-gradient(to left, black);
-    min-height: 100vh;
-}
-
 .width-auto {
     width: auto;
 }
 
 .text-lg {
     font-size: 2rem;
+}
+.carousel-item {
+    text-align: center;
 }
 
 .carousel-indicators li {
@@ -17,7 +15,7 @@ body {
 }
 
 .carousel-indicators li.active {
-    background: whitesmoke
+    background: white
 }
 
 pd-5 {
