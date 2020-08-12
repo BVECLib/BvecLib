@@ -12,12 +12,12 @@ def index():
    return render_template('index.html')
 
 @app.route('/admin', methods = ['GET', 'POST'])
-def upload():
+def admin():
 	fid = 'root'
 	if request.method == 'POST':
 		fid = request.form.get('folder')
 		print(fid)
-	return render_template('upload.html', folder=folder(fid))
+	return render_template('admin.html', folder=folder(fid))
 
 @app.route('/drop', methods = ['GET',  'POST'])
 def drop():
@@ -34,9 +34,8 @@ def upload_file():
       f.save(filename)
       print(fid)
       up(filename, fid)
-      os.remove(filename)
       flash('File successfully uploaded')
-      return redirect(url_for('upload'))
+      return redirect(url_for('admin'))
    if request.method == 'GET':
    	return "Method not supported"
 
