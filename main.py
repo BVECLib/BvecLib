@@ -39,3 +39,7 @@ def upload_file():
       return redirect(url_for('upload'))
    if request.method == 'GET':
    	return "Method not supported"
+
+
+if __name__ == "__main__":
+   app.run()
