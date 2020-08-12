@@ -1,0 +1,6 @@
+<select class="selected" id="folder">
+	<option>Select Folder</option>
+    {% for key,folder in folder.items() %}
+	  <option value="{{folder['id']}}">{{ folder['title'] }}</option>
+	{% endfor %}
+</select>
