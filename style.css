@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(255, 255, 128, .5);
+}
+.bg{
+    background-image: url("images/bg2.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1{
+    font-size: 50px;
+    
+}
+p{
+    color: white;
+    font-size: 25px;
+}
+a:hover{
+    opacity: 0.5;
+}
