@@ -40,5 +40,9 @@ def upload_file():
    	return "Method not supported"
 
 
+@app.route('/sem/<sub>', methods = ['GET', 'POST'])
+def subjects(sub):
+   return render_template('subject.html', subject=sub)
+   
 if __name__ == "__main__":
-   app.run()
+   app.run(debug=True)
