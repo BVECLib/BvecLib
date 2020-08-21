@@ -10,12 +10,14 @@ body{
 
 }
 h1{
-    font-size: 50px;
+    font-size: 70px;
+    font-family: 'Covered By Your Grace', cursive;
     
 }
 p{
     color: white;
     font-size: 25px;
+    
 }
 a:hover{
     opacity: 0.5;
