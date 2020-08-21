@@ -38,14 +38,16 @@ def admin():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
    error = None
-   if request.method == 'POST':
-      if request.form['username'] != 'admin' or request.form['password'] != 'password':
-         error = "Invalid  Credentials. Please try again !"
-      else:
-         session.permanent = True
-         session['logged_in'] = 'aditya'
-         app.permanent_session_lifetime = timedelta(minutes=1440)
+   if "logged_in" in session:
          return redirect(url_for('admin'))
+   if request.method == 'POST':
+         if request.form['username'] != 'admin' or request.form['password'] != 'password':
+            error = "Invalid  Credentials. Please try again !"
+         else:
+            session.permanent = True
+            session['logged_in'] = 'aditya'
+            app.permanent_session_lifetime = timedelta(minutes=1440)
+            return redirect(url_for('admin'))
    return render_template('login.html', error=error)
 
 
