@@ -12,6 +12,7 @@ Flask = "==1.1.2"
 Jinja2 = "==2.11.2"
 Werkzeug = "==1.0.1"
 flask-debugtoolbar = "*"
+flask-login = "*"
 
 [requires]
 python_version = "3.8"
