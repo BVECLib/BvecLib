@@ -1,6 +1,8 @@
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 from flask import abort
+import mimetypes
+import os
 
 gauth = GoogleAuth()
 
@@ -20,9 +22,11 @@ gauth.SaveCredentialsFile("mycreds.txt")
 drive = GoogleDrive(gauth)
 
 def up(filename, fid):
-  file1 = drive.CreateFile({"mimeType": "image/jpg", "parents": [{"kind": "drive#fileLink", "id": fid}]})
+  mime = mimetypes.MimeTypes().guess_type(filename)[0]
+  file1 = drive.CreateFile({"mimeType": mime, "parents": [{"kind": "drive#fileLink", "id": fid}]})
   file1.SetContentFile(filename)
   file1.Upload() # Upload the file.
+  os.remove(filename)
   print('Created file %s with mimeType %s' % (file1['title'], file1['mimeType']))
 
 

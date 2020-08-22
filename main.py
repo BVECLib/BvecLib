@@ -4,13 +4,14 @@ from access import up, folder
 import os
 from functools import wraps
 from datetime import timedelta
-
+import data
 app = Flask(__name__)
 
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 @app.route('/')
 def index():
+   print(subjects)
    return render_template('index.html')
 
 
@@ -65,7 +66,6 @@ def upload_file():
       fid = request.form.get('folder')
       filename = secure_filename(f.filename)
       f.save(filename)
-      print(fid)
       up(filename, fid)
       flash('File successfully uploaded')
       return redirect(url_for('admin'))
@@ -73,9 +73,9 @@ def upload_file():
    	return "Method not supported"
 
 
-@app.route('/sem/<sub>', methods = ['GET', 'POST'])
+@app.route('/<sub>', methods = ['GET', 'POST'])
 def subjects(sub):
-   return render_template('subject.html', subject=sub)
+   return render_template("subject.html", subjec=data.subj, code=sub)
 
    
 if __name__ == "__main__":
