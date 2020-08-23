@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+.card_image {
+    border-radius: 2cm;
+}
+
+h2 {
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header img {
+    width: 50px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: inline-block;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    text-align: center;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.made_by {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card .front {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card .back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 570px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background-color: lightcoral;
+    color: white;
+    transform: rotateY(180deg);
+}
