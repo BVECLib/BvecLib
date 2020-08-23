@@ -155,16 +155,12 @@ body {
 /*HEADER*/
 
 #header {
-    background-color: #291720;
+    background-color: black;
     font-family: 'Merriweather', serif;
 }
 
 #header img {
     width: 40px;
-}
-
-#header img {
-    width: 50px;
 }
 
 
@@ -228,7 +224,7 @@ body {
 .flip-card-back {
     background-color: lightcoral;
     color: white;
-    height: 465px;
+    height: 500px;
     transform: rotateY(180deg);
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
