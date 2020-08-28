@@ -26,7 +26,7 @@ img {
 }
 
 .btn {
-    color: #ffffff;
+    color: white;
     padding: 0.8rem;
     font-size: 14px;
     text-transform: uppercase;
@@ -77,20 +77,30 @@ img {
     overflow: hidden;
 }
 
+.panel-default{
+    padding-top: 2em;
+}
+
+.panel-body{
+    padding-top: 0.7em;
+}
+
 .card_content {
     padding: 1rem;
     background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
 }
 
 .card_title {
-    color: #ffffff;
+    color: black;
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: capitalize;
     margin: 0px;
-    padding-top: 1.6em;
     text-align: center;
+}
+.noBorder {
+    border:none !important;
 }
 
 .card_text {
