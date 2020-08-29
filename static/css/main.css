@@ -1,73 +1,181 @@
+/* Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+
+
+/*
+HEADER
+*/
+
+#header img {
+    width: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.panel-default{
+    padding-top: 2em;
+}
+
+.panel-body{
+    padding-top: 0.7em;
+}
+
+.card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+
+}
+
+.card_title {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    text-align: center;
+}
+.noBorder {
+    border:none !important;
+}
+
+.made_by {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+/* new main*/
+
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+body {
+    color: #272727;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.container-fluid {
+    background-color: #ffc1cc;
+}
+
+
+/*HEADER*/
 
 #header {
-    background-color: #291720;
+    background-color: black;
     font-family: 'Merriweather', serif;
 }
 
 #header img {
-    width: 40px;
+    width: 60px;
 }
 
-#main {
-    background-color: #b5a2a2;
-    font-family: 'Raleway', sans-serif;
-}
 
-/*CARD*/
+/*HEADER END*/
+
+
+/*CARDS*/
 
 .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  /*border: 1px solid #f1f1f1;*/
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    background-color: transparent;
+    width: 305px;
+    height: 470px;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
 }
+
 
 /* This container is needed to position the front and back side */
+
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
+
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
+
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
 }
+
 
 /* Style the front side (fallback if image is missing) */
+
 .flip-card-front {
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-  color: #66d66b;
-  border-radius: 10px;
-  box-shadow: 1px -3px 20px -4px black;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
+
 
 /* Style the back side */
+
 .flip-card-back {
-  background-color: #291720;
-  color: white;
-  transform: rotateY(180deg);
-  border-radius: 10px;
+    background-color: lightcoral;
+    color: white;
+    height: 500px;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 
 
-/*SUBJECT LIST*/
+/*CARDS END*/
+
+.btn-img {
+    margin: 1rem 0rem 1em 0em;
+    padding: 0.3rem;
+    box-shadow: inset 0 0 18px 0px black;
+}
 
 .btn:hover {
     background-color: rgba(255, 255, 255, 0.12);
+}
+
+.darkmode-toggle {
+    z-index: 1;
 }

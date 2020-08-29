@@ -1,23 +1,20 @@
-body {
-    background: linear-gradient(to left, black);
-    min-height: 100vh;
-}
-
 .width-auto {
     width: auto;
 }
 
 .text-lg {
-    font-size: 2rem;
+    font-size: 13rem;
+    font-style: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .carousel-indicators li {
     border: none;
-    background: #ccc;
+    background: white;
 }
 
 .carousel-indicators li.active {
-    background: whitesmoke
+    background: white;
 }
 
 pd-5 {

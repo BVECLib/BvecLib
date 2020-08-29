@@ -1,290 +1,1067 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <title>BVEC Library</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}"> 
-    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<body>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.min.js"></script>
+    <script language="javascript">
+        $(function() {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "positionClass": "toast-bottom-right",
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "0",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            toastr.info("<p'>Cookies help us deliver our services. By using our services, you agree to our use of cookies. <a href='#' target='_new'>More details</a></p>");
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/4657d46491.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>BVEC LIBRARY</title>
-  </head>
-  <body>
-    
     <!-- Header for the page-->
-    <div class="container-fluid sticky-top m-0">
-        <!-- Header -->
+    <div class="container-fluid bg-dark sticky-top">
         <div class="row" id="header">
 
-            <div class="col-md-2 col-xs-12 mt-2">
-                <a href="/"><img src="{{ url_for('static', filename='res/img/logo.jpeg')}}" class="border border-dark d-block m-auto rounded-circle"></a>
-                <h6 class="display-6 text-white text-center font-weight-bold mt-3">BARAK VALLEY ENGINEERING COLLEGE</h6>
+            <!-- Nav -->
+            <header>
+                <div id="myNav" class="menu">
+                    <div class="menu-content">
+                        <a href="#">home</a>
+                        <a href="#">QuestionPaper</a>
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+                <div class="fixed-top" style="top:15px; left: 15px;">
+                    <a class="btn-lg text-light" id="openNav">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+
+            </header>
+
+            <!-- Main -->
+            <main class="d-flex align-items-center justify-content-center text-center">
+                <div class="text-white">
+
+                </div>
+            </main>
+
+            <div class="col-md-2 col-xs-12 mt-4">
+                <a href="/"><img src="{{ url_for('static', filename='res/img/logo.jpeg') }}" class="border border-dark d-block m-auto rounded-circle"></a>
             </div>
 
-            <div class="col-md-8 col-xs-12 mt-4 title">
-                <h1 class="display-6 text-white text-center font-weight-normal mt-0">BVEC <span class="font-weight-bold display-3">LIBRARY</span></h1>
+            <div class="col-md-8 col-xs-12">
+                <h1 class="display-6 text-white text-center font-weight-normal mt-2">BVEC<h1>
+                <h1 class="display-4 text-white font-weight-bold">LIBRARY</h1>
             </div>
         </div>
     </div>
-        <!-- Main Content -->
-    <div class="container-fluid " id="main">
-        
-        <div class="row"> 
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">1</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">1st SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
+    <!--quote card-->
+
+    <div class="container pd-2 mt-3">
+        <div class="row">
+            <div class="col-lg-12 col-xl-10  mx-auto d-block">
+                <div class="p-5 bg-white shadow rounded">
+                    <!-- Bootstrap carousel-->
+                    <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                        <!-- Bootstrap carousel indicators [nav] -->
+                        <ol class="carousel-indicators mb-0">
+                            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+
+
+                        <!-- Bootstrap inner [slides]-->
+                        <div class="carousel-inner px-5 pb-4">
+                            <!-- Carousel slide-->
+                            <div class="carousel-item active">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Strive for progress, not perfection.</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel slide-->
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>The expert in everything was once a beginner.</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel slide-->
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>It’s not going to be easy, but it’s going to be worth it.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>An investment in knowledge pays the best interest.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Do what is right, not what is easy.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>You don’t have to be great to start. But you have to start to be great.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Be stronger than your excuses.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Vision without execution is just hallucination.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>The distance between dreams and reality is called action.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>The goal is to die with memories not dreams.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Focus on being productive instead of busy.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Impossible is not a fact. It is an opinion.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Great things never come from comfort zones.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Failure defeats losers. Failure inspires winners.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>If you do not go to the end, why start?</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Quality is not an act, but a habit</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="media">
+                                    <div class="media-body ml-3">
+                                        <blockquote class="blockquote border-0 p-0">
+                                            <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>The successful person is the average man, with laser-like focus.</p>
+
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <!-- Bootstrap controls [dots]-->
+                        <a class="carousel-control-prev width-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left text-light text-lg"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next width-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="fa fa-angle-right text-light text-lg"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div class="flip-card-back">
-                        <div class="h2 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
                 </div>
             </div>
-
-            <!-- 2 -->
-
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">2</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">2nd SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101]Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!-- 3 -->
-
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">3</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">3rd SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-
-        <!-- 2nd Row -->
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">4</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">4th SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!-- 2 -->
-
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">5</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">5th SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!-- 3 -->
-
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">6</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">6th SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-
-        <!-- 3rd Row -->
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">7</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">7th SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!-- 2 -->
-
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">8</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">8th SEMESTER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!-- 3 -->
-
-            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
-                <div class="flip-card mx-auto d-block">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <span class="fa-stack fa-5x">
-                          <i class="fa fa-square fa-stack-2x"></i>
-                          <strong class="text-dark fa-stack-1x mt-2">OT</strong>
-                        </span>
-                        <h4 class="font-weight-bold text-light">OTHER</h4>
-                        <h5 class="font-weight-bold mt-1 btn btn-dark text-light">CREDITS <i class="badge badge-light">2</i></h5><br>
-                        <h5 class="font-weight-bold pt-1 btn btn-dark text-light">MARKS <i class="badge badge-light">2</i></h5>
-                    </div>
-                    <div class="flip-card-back">
-                        <div class="h4 text-center font-weight-bold mt-3 border-bottom">SUBJECT</div>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[PH181101] Physics-101</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[MA181102] Mathematics-I</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[CE181103] Engineering Graphics and Design</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[ME181104] Engineering Mechanics</a><br>
-                        <a href="link" class="btn text-white font-weight-bold text-center">[HS181105] Sociology</a><br>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
+    <!------------------------------------------------------- Cards for semesters ------------------------------------------------------------------------------------------------>
+    <div class="container pd-5" id="main">
+        <div class="row">
 
+            <!-- Card 1-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/1.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+
+
+                                        </div>
+
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                        <button class="btn card_btn"><a href="/PH181101" class="btn card_btn" role="button" aria-pressed="true">Physics-101</a></button><br>
+                                        <button class="btn card_btn"><a href="/MA181102" class="btn card_btn" role="button" aria-pressed="true">Mathematics-I</a></button><br>
+                                        <button class="btn card_btn"><a href="/CE181103" class="btn card_btn" role="button" aria-pressed="true">Engineering Graphics and Design</a></button><br>
+                                        <button class="btn card_btn"><a href="/ME181104" class="btn card_btn" role="button" aria-pressed="true">Engineering Mechanics</a></button><br>
+                                        <button class="btn card_btn"><a href="/HS181105" class="btn card_btn" role="button" aria-pressed="true">Sociology</a></button><br>
+                                        </div>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                        <table class="table table-sm text-dark text-left">
+                                                            <tbody>
+                                                                <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                    <th class="noBorder" scope="row">Physics-101</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Mathematics-I</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Graphics and Design</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Mechanics</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Sociology</th>                                                                            
+                                                                    <td class="noBorder">2</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="panel panel-default">
+                                    <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <div class="accordian-body collapse" id="demo1">
+                                                        <table class="table table-sm text-dark text-left">
+                                                            <tbody>
+                                                                <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                    <th class="noBorder" scope="row">Physics-101</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Mathematics-I</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Graphics and Design</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Mechanics</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Sociology</th>                                                                            
+                                                                    <td class="noBorder">2</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> -->
+                            </div>
+                            <!-- <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/PH181101" class="btn card_btn" role="button" aria-pressed="true">Physics-101</a></button><br>
+                            <button class="btn card_btn"><a href="/MA181102" class="btn card_btn" role="button" aria-pressed="true">Mathematics-I</a></button><br>
+                            <button class="btn card_btn"><a href="/CE181103" class="btn card_btn" role="button" aria-pressed="true">Engineering Graphics and Design</a></button><br>
+                            <button class="btn card_btn"><a href="/ME181104" class="btn card_btn" role="button" aria-pressed="true">Engineering Mechanics</a></button><br>
+                            <button class="btn card_btn"><a href="/HS181105" class="btn card_btn" role="button" aria-pressed="true">Sociology</a></button><br> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/2.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
+                                        <div class="panel-body">
+
+                                            <table class="table table-sm text-dark">
+                                                <thead>
+                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
+                                                        <th class="noBorder" scope="col">SUBJECTS</th>
+                                                        <th class="noBorder" scope="col">CREDITS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="12" class="hiddenRow">
+                                                            <div class="accordian-body collapse" id="demo1">
+                                                                <table class="table table-sm text-dark text-left">
+                                                                    <tbody>
+                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                            <th class="noBorder" scope="row">Chemistry-201</th>
+                                                                            <td class="noBorder">4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Mathematics-II</th>
+                                                                            <td class="noBorder">4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Problem solving through Programming using C</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Basic Electrical Engineering</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Communication and Professional Skill</th>                                                                            
+                                                                            <td class="noBorder">2</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/CY181201" class="btn card_btn" role="button" aria-pressed="true">Chemistry-201</a></button><br>
+                            <button class="btn card_btn"><a href="/MA181202" class="btn card_btn" role="button" aria-pressed="true">Mathematics-II</a></button><br>
+                            <button class="btn card_btn"><a href="/CS181106" class="btn card_btn" role="button" aria-pressed="true">Problem solving through Programming using C</a></button><br>
+                            <button class="btn card_btn"><a href="/EE181107" class="btn card_btn" role="button" aria-pressed="true">Basic Electrical Engineering</a></button><br>
+                            <button class="btn card_btn"><a href="/HS181108" class="btn card_btn" role="button" aria-pressed="true">Communication and Professional Skill</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/3.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References <span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
+                                        <div class="panel-body">
+
+                                            <table class="table table-sm text-dark">
+                                                <thead>
+                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
+                                                        <th class="noBorder" scope="col">SUBJECTS</th>
+                                                        <th class="noBorder" scope="col">CREDITS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="12" class="hiddenRow">
+                                                            <div class="accordian-body collapse" id="demo1">
+                                                                <table class="table table-sm text-dark text-left">
+                                                                    <tbody>
+                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                            <th class="noBorder" scope="row">Mathetics III-B</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Object Oriented Programming using C++</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Digital Systems</th>
+                                                                            <td class="noBorder">4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Data Structure and Algorithms</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Basics of Signals and Systems</th>                                                                            
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Constitution of India</th>                                                                            
+                                                                            <td class="noBorder">0</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/MA181301B" class="btn card_btn" role="button" aria-pressed="true">Mathetics III-B</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181302" class="btn card_btn" role="button" aria-pressed="true">Object Oriented Programming using C++</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181303" class="btn card_btn" role="button" aria-pressed="true">Digital Systems</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181304" class="btn card_btn" role="button" aria-pressed="true">Data Structure and Algorithms</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181305" class="btn card_btn" role="button" aria-pressed="true">Basics of Signals and Systems</a></button><br>
+                            <button class="btn card_btn"><a href="/MC181306" class="btn card_btn" role="button" aria-pressed="true">Constitution of India</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/4.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
+                                        <div class="panel-body">
+
+                                            <table class="table table-sm text-dark">
+                                                <thead>
+                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
+                                                        <th class="noBorder" scope="col">SUBJECTS</th>
+                                                        <th class="noBorder" scope="col">CREDITS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="12" class="hiddenRow">
+                                                            <div class="accordian-body collapse" id="demo1">
+                                                                <table class="table table-sm text-dark text-left">
+                                                                    <tbody>
+                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                            <th class="noBorder" scope="row">Discrete Mathematics</th>
+                                                                            <td class="noBorder">4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Computer Organization and Architecture</th>
+                                                                            <td class="noBorder">4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Operating System</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">JAVA Programming</th>
+                                                                            <td class="noBorder">4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Graph Theory</th>                                                                            
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Environmental Science</th>                                                                            
+                                                                            <td class="noBorder">0</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/CSE181401" class="btn card_btn" role="button" aria-pressed="true">Discrete Mathematics</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181402" class="btn card_btn" role="button" aria-pressed="true">Computer Organization and Architecture</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181403" class="btn card_btn" role="button" aria-pressed="true">Operating System</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181404" class="btn card_btn" role="button" aria-pressed="true">JAVA Programming</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181405" class="btn card_btn" role="button" aria-pressed="true">Graph Theory</a></button><br>
+                            <button class="btn card_btn"><a href="/MC181406" class="btn card_btn" role="button" aria-pressed="true">Environmental Science</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/5.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
+                                        <div class="panel-body">
+
+                                            <table class="table table-sm text-dark">
+                                                <thead>
+                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
+                                                        <th class="noBorder" scope="col">SUBJECTS</th>
+                                                        <th class="noBorder" scope="col">CREDITS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="12" class="hiddenRow">
+                                                            <div class="accordian-body collapse" id="demo1">
+                                                                <table class="table table-sm text-dark text-left">
+                                                                    <tbody>
+                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                            <th class="noBorder" scope="row">Database Management System</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Design and Analysis of Algorithm</th>
+                                                                            <td class="noBorder">4</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Formal Language and Automata Theory</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Program Elective-1</th>
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">Engineering Economics</th>                                                                            
+                                                                            <td class="noBorder">3</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/CSE181501" class="btn card_btn" role="button" aria-pressed="true">Database Management System</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181502" class="btn card_btn" role="button" aria-pressed="true">Design and Analysis of Algorithm</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE181503" class="btn card_btn" role="button" aria-pressed="true">Formal Language and Automata Theory</a></button><br>
+                            <button class="btn card_btn"><a href="/CSE1815PE1" class="btn card_btn" role="button" aria-pressed="true">Program Elective-1</a></button><br>
+                            <button class="btn card_btn"><a href="/HS181506" class="btn card_btn" role="button" aria-pressed="true">Engineering Economics</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/6.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
+                                        <div class="panel-body">
+
+                                            <table class="table table-sm text-dark">
+                                                <thead>
+                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
+                                                        <th class="noBorder" scope="col">SUBJECTS</th>
+                                                        <th class="noBorder" scope="col">CREDITS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="12" class="hiddenRow">
+                                                            <div class="accordian-body collapse" id="demo1">
+                                                                <table class="table table-sm text-dark text-left">
+                                                                    <tbody>
+                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>                                                                            
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/7.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
+                                        <div class="panel-body">
+
+                                            <table class="table table-sm text-dark">
+                                                <thead>
+                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
+                                                        <th class="noBorder" scope="col">SUBJECTS</th>
+                                                        <th class="noBorder" scope="col">CREDITS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="12" class="hiddenRow">
+                                                            <div class="accordian-body collapse" id="demo1">
+                                                                <table class="table table-sm text-dark text-left">
+                                                                    <tbody>
+                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>                                                                            
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/8.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
+                                        <div class="panel-body">
+
+                                            <table class="table table-sm text-dark">
+                                                <thead>
+                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
+                                                        <th class="noBorder" scope="col">SUBJECTS</th>
+                                                        <th class="noBorder" scope="col">CREDITS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="12" class="hiddenRow">
+                                                            <div class="accordian-body collapse" id="demo1">
+                                                                <table class="table table-sm text-dark text-left">
+                                                                    <tbody>
+                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="noBorder" scope="row">NA</th>                                                                            
+                                                                            <td class="noBorder">NA</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9-->
+            <div class="col-lg-4 col-md-6 col-xs-12 mt-5">
+                <div class="flip-card mx-auto d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card_content">
+                                <button class="btn btn-img"><img class="image-fluid pd-2" src="{{ url_for('static', filename='res/img/gate.jpg') }}"></button>
+                                <h6 class="font-weight-bold text-black display-6">SEMESTER</h6>
+                                <button type="button" class="btn card_btn">
+                                    Previous Years Papers:<span class="badge badge-dark">'15,'16,'17</span>                                        
+                                </button>
+                                <button type="button" class="btn card_btn">
+                                    Study Materials: <span class="badge badge-dark">ClassNotes</span>
+                                </button>
+                                <button class="btn card_btn">
+                                    Video References<span class="badge badge-dark">Youtube</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="flip-card-back">
+                            <button class="btn card_btn card_title"><a href="/QPGATE" class="btn card_btn" role="button" aria-pressed="true">Question Papers</a></button><br>
+                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <button class="btn card_btn"><a href="/GATE1" class="btn card_btn" role="button" aria-pressed="true">Engineering Mathematics</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE2" class="btn card_btn" role="button" aria-pressed="true">Digital Logic</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE3" class="btn card_btn" role="button" aria-pressed="true">Computer Organization and Architecture</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE4" class="btn card_btn" role="button" aria-pressed="true">Programming and Data Structures</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE5" class="btn card_btn" role="button" aria-pressed="true">Algorithms</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE6" class="btn card_btn" role="button" aria-pressed="true">Theory of Computation</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE7" class="btn card_btn" role="button" aria-pressed="true">Compiler Design</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE8" class="btn card_btn" role="button" aria-pressed="true">Operating System</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE9" class="btn card_btn" role="button" aria-pressed="true">Databases</a></button><br>
+                            <button class="btn card_btn"><a href="/GATE10" class="btn card_btn" role="button" aria-pressed="true">Computer Networks</a></button><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <h3 class="made_by">Made with ♡</h3>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+    <script src="{{ url_for('static', filename='js/newdark.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/cookie.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/nav.js') }}"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
