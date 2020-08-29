@@ -69,8 +69,8 @@
                 <a href="/"><img src="res/img/logo.jpeg" class="border border-dark d-block m-auto rounded-circle"></a>
             </div>
 
-            <div class="col-md-8 col-xs-12 mt-1">
-                <h1 class="display-6 text-white text-center font-weight-normal">BVEC<h1>
+            <div class="col-md-8 col-xs-12">
+                <h1 class="display-6 text-white text-center font-weight-normal mt-2">BVEC<h1>
                 <h1 class="display-4 text-white font-weight-bold">LIBRARY</h1>
             </div>
         </div>
@@ -312,62 +312,125 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h1 class="card_title">CREDIT DISTRIBUTION</h1>
-                                        <div class="panel-body">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
 
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">Physics-101</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Mathematics-I</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Engineering Graphics and Design</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Engineering Mechanics</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Sociology</th>                                                                            
-                                                                            <td class="noBorder">2</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+
+                                        </div>
+
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                        <button class="btn card_btn"><a href="/PH181101" class="btn card_btn" role="button" aria-pressed="true">Physics-101</a></button><br>
+                                        <button class="btn card_btn"><a href="/MA181102" class="btn card_btn" role="button" aria-pressed="true">Mathematics-I</a></button><br>
+                                        <button class="btn card_btn"><a href="/CE181103" class="btn card_btn" role="button" aria-pressed="true">Engineering Graphics and Design</a></button><br>
+                                        <button class="btn card_btn"><a href="/ME181104" class="btn card_btn" role="button" aria-pressed="true">Engineering Mechanics</a></button><br>
+                                        <button class="btn card_btn"><a href="/HS181105" class="btn card_btn" role="button" aria-pressed="true">Sociology</a></button><br>
+                                        </div>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                        <table class="table table-sm text-dark text-left">
+                                                            <tbody>
+                                                                <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                    <th class="noBorder" scope="row">Physics-101</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Mathematics-I</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Graphics and Design</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Mechanics</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Sociology</th>                                                                            
+                                                                    <td class="noBorder">2</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
                                 </div>
+
+                                <!-- <div class="panel panel-default">
+                                    <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                                <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <div class="accordian-body collapse" id="demo1">
+                                                        <table class="table table-sm text-dark text-left">
+                                                            <tbody>
+                                                                <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                    <th class="noBorder" scope="row">Physics-101</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Mathematics-I</th>
+                                                                    <td class="noBorder">4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Graphics and Design</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Engineering Mechanics</th>
+                                                                    <td class="noBorder">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="noBorder" scope="row">Sociology</th>                                                                            
+                                                                    <td class="noBorder">2</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> -->
                             </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
+                            <!-- <h2 class="card_title">SUBJECTS</h2><br>
                             <button class="btn card_btn"><a href="/PH181101" class="btn card_btn" role="button" aria-pressed="true">Physics-101</a></button><br>
                             <button class="btn card_btn"><a href="/MA181102" class="btn card_btn" role="button" aria-pressed="true">Mathematics-I</a></button><br>
                             <button class="btn card_btn"><a href="/CE181103" class="btn card_btn" role="button" aria-pressed="true">Engineering Graphics and Design</a></button><br>
                             <button class="btn card_btn"><a href="/ME181104" class="btn card_btn" role="button" aria-pressed="true">Engineering Mechanics</a></button><br>
-                            <button class="btn card_btn"><a href="/HS181105" class="btn card_btn" role="button" aria-pressed="true">Sociology</a></button><br>
+                            <button class="btn card_btn"><a href="/HS181105" class="btn card_btn" role="button" aria-pressed="true">Sociology</a></button><br> -->
                         </div>
                     </div>
                 </div>
