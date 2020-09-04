@@ -457,62 +457,76 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
-                                        <div class="panel-body">
-
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">Chemistry-201</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Mathematics-II</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Problem solving through Programming using C</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Basic Electrical Engineering</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Communication and Professional Skill</th>                                                                            
-                                                                            <td class="noBorder">2</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+            
+            
+                                        </div>
+            
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/CY181201" class="btn card_btn" role="button" aria-pressed="true">Chemistry-201</a></button><br>
+                                          <button class="btn card_btn"><a href="/MA181202" class="btn card_btn" role="button" aria-pressed="true">Mathematics-II</a></button><br>
+                                          <button class="btn card_btn"><a href="/CS181106" class="btn card_btn" role="button" aria-pressed="true">Problem solving through Programming using C</a></button><br>
+                                          <button class="btn card_btn"><a href="/EE181107" class="btn card_btn" role="button" aria-pressed="true">Basic Electrical Engineering</a></button><br>
+                                          <button class="btn card_btn"><a href="/HS181108" class="btn card_btn" role="button" aria-pressed="true">Communication and Professional Skill</a></button><br>
+                                        </div>
+                                    </div>
+            
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <table class="table table-sm text-dark text-left">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                <th class="noBorder" scope="row">Chemistry-201</th>
+                                                                <td class="noBorder">4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Mathematics-II</th>
+                                                                <td class="noBorder">4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Problem solving through Programming using C</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Basic Electrical Engineering</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Communication and Professional Skill</th>                                                                            
+                                                                <td class="noBorder">2</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/CY181201" class="btn card_btn" role="button" aria-pressed="true">Chemistry-201</a></button><br>
-                            <button class="btn card_btn"><a href="/MA181202" class="btn card_btn" role="button" aria-pressed="true">Mathematics-II</a></button><br>
-                            <button class="btn card_btn"><a href="/CS181106" class="btn card_btn" role="button" aria-pressed="true">Problem solving through Programming using C</a></button><br>
-                            <button class="btn card_btn"><a href="/EE181107" class="btn card_btn" role="button" aria-pressed="true">Basic Electrical Engineering</a></button><br>
-                            <button class="btn card_btn"><a href="/HS181108" class="btn card_btn" role="button" aria-pressed="true">Communication and Professional Skill</a></button><br>
+                            </div>                
                         </div>
                     </div>
                 </div>
@@ -532,73 +546,87 @@
                                     Study Materials: <span class="badge badge-dark">ClassNotes</span>
                                 </button>
                                 <button class="btn card_btn">
-                                    Video References <span class="badge badge-dark">Youtube</span>
+                                    Video References<span class="badge badge-dark">Youtube</span>
                                 </button>
                             </div>
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
-                                        <div class="panel-body">
-
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">Mathetics III-B</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Object Oriented Programming using C++</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Digital Systems</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Data Structure and Algorithms</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Basics of Signals and Systems</th>                                                                            
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Constitution of India</th>                                                                            
-                                                                            <td class="noBorder">0</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+            
+            
+                                        </div>
+            
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/MA181301B" class="btn card_btn" role="button" aria-pressed="true">Mathetics III-B</a></button><br>
+                                        <button class="btn card_btn"><a href="/CSE181302" class="btn card_btn" role="button" aria-pressed="true">Object Oriented Programming using C++</a></button><br>
+                                        <button class="btn card_btn"><a href="/CSE181303" class="btn card_btn" role="button" aria-pressed="true">Digital Systems</a></button><br>
+                                        <button class="btn card_btn"><a href="/CSE181304" class="btn card_btn" role="button" aria-pressed="true">Data Structure and Algorithms</a></button><br>
+                                        <button class="btn card_btn"><a href="/CSE181305" class="btn card_btn" role="button" aria-pressed="true">Basics of Signals and Systems</a></button><br>
+                                        <button class="btn card_btn"><a href="/MC181306" class="btn card_btn" role="button" aria-pressed="true">Constitution of India</a></button><br>
+                                        </div>
+                                    </div>
+            
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <table class="table table-sm text-dark text-left">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                <th class="noBorder" scope="row">Mathetics III-B</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Object Oriented Programming using C++</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Digital Systems</th>
+                                                                <td class="noBorder">4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Data Structure and Algorithms</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Basics of Signals and Systems</th>                                                                            
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Constitution of India</th>                                                                            
+                                                                <td class="noBorder">0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/MA181301B" class="btn card_btn" role="button" aria-pressed="true">Mathetics III-B</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181302" class="btn card_btn" role="button" aria-pressed="true">Object Oriented Programming using C++</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181303" class="btn card_btn" role="button" aria-pressed="true">Digital Systems</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181304" class="btn card_btn" role="button" aria-pressed="true">Data Structure and Algorithms</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181305" class="btn card_btn" role="button" aria-pressed="true">Basics of Signals and Systems</a></button><br>
-                            <button class="btn card_btn"><a href="/MC181306" class="btn card_btn" role="button" aria-pressed="true">Constitution of India</a></button><br>
+                            </div>                
                         </div>
                     </div>
                 </div>
@@ -624,67 +652,81 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
-                                        <div class="panel-body">
-
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">Discrete Mathematics</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Computer Organization and Architecture</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Operating System</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">JAVA Programming</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Graph Theory</th>                                                                            
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Environmental Science</th>                                                                            
-                                                                            <td class="noBorder">0</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+            
+            
+                                        </div>
+            
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/CSE181401" class="btn card_btn" role="button" aria-pressed="true">Discrete Mathematics</a></button><br>
+                                          <button class="btn card_btn"><a href="/CSE181402" class="btn card_btn" role="button" aria-pressed="true">Computer Organization and Architecture</a></button><br>
+                                          <button class="btn card_btn"><a href="/CSE181403" class="btn card_btn" role="button" aria-pressed="true">Operating System</a></button><br>
+                                          <button class="btn card_btn"><a href="/CSE181404" class="btn card_btn" role="button" aria-pressed="true">JAVA Programming</a></button><br>
+                                          <button class="btn card_btn"><a href="/CSE181405" class="btn card_btn" role="button" aria-pressed="true">Graph Theory</a></button><br>
+                                          <button class="btn card_btn"><a href="/MC181406" class="btn card_btn" role="button" aria-pressed="true">Environmental Science</a></button><br>
+                                        </div>
+                                    </div>
+            
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <table class="table table-sm text-dark text-left">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                <th class="noBorder" scope="row">Discrete Mathematics</th>
+                                                                <td class="noBorder">4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Computer Organization and Architecture</th>
+                                                                <td class="noBorder">4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Operating System</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">JAVA Programming</th>
+                                                                <td class="noBorder">4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Graph Theory</th>                                                                            
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Environmental Science</th>                                                                            
+                                                                <td class="noBorder">0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/CSE181401" class="btn card_btn" role="button" aria-pressed="true">Discrete Mathematics</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181402" class="btn card_btn" role="button" aria-pressed="true">Computer Organization and Architecture</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181403" class="btn card_btn" role="button" aria-pressed="true">Operating System</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181404" class="btn card_btn" role="button" aria-pressed="true">JAVA Programming</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181405" class="btn card_btn" role="button" aria-pressed="true">Graph Theory</a></button><br>
-                            <button class="btn card_btn"><a href="/MC181406" class="btn card_btn" role="button" aria-pressed="true">Environmental Science</a></button><br>
+                            </div>                
                         </div>
                     </div>
                 </div>
@@ -710,62 +752,76 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
-                                        <div class="panel-body">
-
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">Database Management System</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Design and Analysis of Algorithm</th>
-                                                                            <td class="noBorder">4</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Formal Language and Automata Theory</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Program Elective-1</th>
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">Engineering Economics</th>                                                                            
-                                                                            <td class="noBorder">3</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+            
+            
+                                        </div>
+            
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/CSE181501" class="btn card_btn" role="button" aria-pressed="true">Database Management System</a></button><br>
+                                        <button class="btn card_btn"><a href="/CSE181502" class="btn card_btn" role="button" aria-pressed="true">Design and Analysis of Algorithm</a></button><br>
+                                        <button class="btn card_btn"><a href="/CSE181503" class="btn card_btn" role="button" aria-pressed="true">Formal Language and Automata Theory</a></button><br>
+                                        <button class="btn card_btn"><a href="/CSE1815PE1" class="btn card_btn" role="button" aria-pressed="true">Program Elective-1</a></button><br>
+                                        <button class="btn card_btn"><a href="/HS181506" class="btn card_btn" role="button" aria-pressed="true">Engineering Economics</a></button><br>
+                                        </div>
+                                    </div>
+            
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <table class="table table-sm text-dark text-left">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                <th class="noBorder" scope="row">Database Management System</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Design and Analysis of Algorithm</th>
+                                                                <td class="noBorder">4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Formal Language and Automata Theory</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Program Elective-1</th>
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">Engineering Economics</th>                                                                            
+                                                                <td class="noBorder">3</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/CSE181501" class="btn card_btn" role="button" aria-pressed="true">Database Management System</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181502" class="btn card_btn" role="button" aria-pressed="true">Design and Analysis of Algorithm</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE181503" class="btn card_btn" role="button" aria-pressed="true">Formal Language and Automata Theory</a></button><br>
-                            <button class="btn card_btn"><a href="/CSE1815PE1" class="btn card_btn" role="button" aria-pressed="true">Program Elective-1</a></button><br>
-                            <button class="btn card_btn"><a href="/HS181506" class="btn card_btn" role="button" aria-pressed="true">Engineering Economics</a></button><br>
+                            </div>                
                         </div>
                     </div>
                 </div>
@@ -791,62 +847,76 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
-                                        <div class="panel-body">
-
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>                                                                            
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+            
+            
+                                        </div>
+            
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                        </div>
+                                    </div>
+            
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <table class="table table-sm text-dark text-left">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>                                                                            
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            </div>                
                         </div>
                     </div>
                 </div>
@@ -872,62 +942,76 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
-                                        <div class="panel-body">
-
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>                                                                            
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+            
+            
+                                        </div>
+            
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                        </div>
+                                    </div>
+            
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <table class="table table-sm text-dark text-left">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>                                                                            
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            </div>                
                         </div>
                     </div>
                 </div>
@@ -953,62 +1037,76 @@
                         </div>
                         <div class="flip-card-back">
                             <div class="container">
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <h2 class="card_title">CREDIT DISTRIBUTION</h2>
-                                        <div class="panel-body">
-
-                                            <table class="table table-sm text-dark">
-                                                <thead>
-                                                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
-                                                        <th class="noBorder" scope="col"><button class="btn btn-default btn-xs btn-outline-dark"><span class="glyphicon glyphicon-eye-open">#</span></button></th>
-                                                        <th class="noBorder" scope="col">SUBJECTS</th>
-                                                        <th class="noBorder" scope="col">CREDITS</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="12" class="hiddenRow">
-                                                            <div class="accordian-body collapse" id="demo1">
-                                                                <table class="table table-sm text-dark text-left">
-                                                                    <tbody>
-                                                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th class="noBorder" scope="row">NA</th>                                                                            
-                                                                            <td class="noBorder">NA</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+            
+            
+                                        </div>
+            
+                                        <div class="col-md-6" id="headingTwo">
+                                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                CREDITS
+                                            </button>
                                         </div>
                                     </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                          <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                                        </div>
+                                    </div>
+            
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <table class="table table-sm text-dark">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th class="noBorder" scope="col">SUBJECTS</th>
+                                                <th class="noBorder" scope="col">CREDITS</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="12" class="hiddenRow">
+                                                    <table class="table table-sm text-dark text-left">
+                                                        <tbody>
+                                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="noBorder" scope="row">NA</th>                                                                            
+                                                                <td class="noBorder">NA</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
-                            <button class="btn card_btn"><a href="/NA" class="btn card_btn" role="button" aria-pressed="true">NA</a></button><br>
+                            </div>                
                         </div>
                     </div>
                 </div>
@@ -1031,21 +1129,35 @@
                                     Video References<span class="badge badge-dark">Youtube</span>
                                 </button>
                             </div>
-
                         </div>
                         <div class="flip-card-back">
-                            <button class="btn card_btn card_title"><a href="/QPGATE" class="btn card_btn" role="button" aria-pressed="true">Question Papers</a></button><br>
-                            <h2 class="card_title">SUBJECTS</h2><br>
-                            <button class="btn card_btn"><a href="/GATE1" class="btn card_btn" role="button" aria-pressed="true">Engineering Mathematics</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE2" class="btn card_btn" role="button" aria-pressed="true">Digital Logic</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE3" class="btn card_btn" role="button" aria-pressed="true">Computer Organization and Architecture</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE4" class="btn card_btn" role="button" aria-pressed="true">Programming and Data Structures</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE5" class="btn card_btn" role="button" aria-pressed="true">Algorithms</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE6" class="btn card_btn" role="button" aria-pressed="true">Theory of Computation</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE7" class="btn card_btn" role="button" aria-pressed="true">Compiler Design</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE8" class="btn card_btn" role="button" aria-pressed="true">Operating System</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE9" class="btn card_btn" role="button" aria-pressed="true">Databases</a></button><br>
-                            <button class="btn card_btn"><a href="/GATE10" class="btn card_btn" role="button" aria-pressed="true">Computer Networks</a></button><br>
+                            <div class="container">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="row">
+                                        <div class="col-md-6" id="headingOne">
+                                            <button class="btn card_title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Subjects
+                                            </button>
+                                        </div>
+                                    </div>
+            
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                          <!-- <h2 class="card_title">SUBJECTS</h2><br> -->
+                                          <button class="btn card_btn"><a href="/GATE1" class="btn card_btn" role="button" aria-pressed="true">Engineering Mathematics</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE2" class="btn card_btn" role="button" aria-pressed="true">Digital Logic</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE3" class="btn card_btn" role="button" aria-pressed="true">Computer Organization and Architecture</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE4" class="btn card_btn" role="button" aria-pressed="true">Programming and Data Structures</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE5" class="btn card_btn" role="button" aria-pressed="true">Algorithms</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE6" class="btn card_btn" role="button" aria-pressed="true">Theory of Computation</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE7" class="btn card_btn" role="button" aria-pressed="true">Compiler Design</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE8" class="btn card_btn" role="button" aria-pressed="true">Operating System</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE9" class="btn card_btn" role="button" aria-pressed="true">Databases</a></button><br>
+                                        <button class="btn card_btn"><a href="/GATE10" class="btn card_btn" role="button" aria-pressed="true">Computer Networks</a></button><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                
                         </div>
                     </div>
                 </div>
